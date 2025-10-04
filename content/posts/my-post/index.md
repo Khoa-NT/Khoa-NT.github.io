@@ -33,7 +33,7 @@ tags: []                                               # tags for this blog post
 # editAppendPath: true                                   # whether to append the page path to editURL
 ---
 
-This is my first post.
+This is my first post to test the GitHub Pages.
 
 <!-- Use images placed in the `images/` folder next to this file, e.g.: -->
 <!-- ![Caption](images/photo1.jpg) -->
