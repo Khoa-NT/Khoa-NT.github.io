@@ -1,0 +1,82 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#     name = The name to be displayed for this menu link
+#     pageRef = The identifier of the page or section to link to. Link to the subfolder of the `content` folder.
+#     weight = Menu links will be sorted from lowest to highest weight, and then alphabetically by name.
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+### Docs: 
+###     + https://blowfish.page/docs/getting-started/#menus
+###     + https://blowfish.page/docs/configuration/
+### Read the `Khoa-NT/themes/blowfish/exampleSite` for more examples.
+
+
+[[main]]
+   name = "Blog"
+   pageRef = "posts" ### Link to
+   weight = 10
+
+
+### Example of nested menus
+# [[main]]
+#    name = "Parent"
+#    weight = 20
+
+# [[main]]
+#    name = "example sub-menu 1"
+#    parent = "Parent"
+#    pageRef = "posts"
+#    weight = 20
+
+# [[main]]
+#    name = "example sub-menu 2"
+#    parent = "Parent"
+#    pageRef = "posts"
+#    weight = 20
+
+### Example of subnavigation menu. This will render a second line with sub-categories below the main header menu.
+# [[subnavigation]]
+#    name = "An interesting topic"
+#    pageRef = "tags/interesting-topic"
+#    weight = 10
+
+
+### The `pre` parameter allows you to place an icon from Blowfish's icon set on the menu entry. 
+# [[subnavigation]]
+#    name = "My Awesome Category"
+#    pre = "github" 
+#    pageRef = "categories/awesome"
+#    weight = 20
+
+
+# [[main]]
+#    name = "Categories"
+#    pageRef = "categories"
+#    weight = 20
+
+[[main]]
+   name = "Tags"
+   pageRef = "tags"
+   weight = 30
+
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+### Blowfish has two menus that can be customised to suit the content and layout of your site. 
+### The main menu appears in the site header and the footer menu appears at the bottom of the page just above the copyright notice.
+
+# [[footer]]
+#     name = "Tags"
+#     pageRef = "tags"
+#     weight = 10
+
+# [[footer]]
+#     name = "Categories"
+#     pageRef = "categories"
+#     weight = 20

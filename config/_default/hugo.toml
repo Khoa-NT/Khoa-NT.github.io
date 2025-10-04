@@ -1,0 +1,76 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
+### Docs: 
+###     + https://blowfish.page/docs/configuration/
+
+
+theme = "blowfish" # UNCOMMENT THIS LINE
+# baseURL = "https://your_domain.com/"
+
+defaultContentLanguage = "en"
+
+# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in    https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+
+enableRobotsTXT = true
+summaryLength = 0 ### The number of words that are used to generate the article summary when one is not provided in the front matter. A value of 0 will use the first sentence. This value has no effect when summaries are hidden.
+
+buildDrafts = false
+buildFuture = false
+
+enableEmoji = true
+
+# googleAnalytics = "G-XXXXXXXXX"
+
+[pagination]
+    pagerSize = 100 ### The number of articles listed on each page of the article listing.
+
+[imaging]
+    anchor = 'Center'
+
+
+### Define the taxonomies for the site. Like the header in Notion.
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"
+    series = "series"
+
+
+[sitemap]
+    changefreq = 'daily'
+    filename = 'sitemap.xml'
+    priority = 0.5
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"] ### The output formats that are generated for the site. Blowfish requires HTML, RSS and JSON for all theme components to work correctly.
+
+[related]
+    threshold = 0
+    toLower = false
+
+        [[related.indices]]
+            name = "tags"
+            weight = 100
+
+        [[related.indices]]
+            name = "categories"
+            weight = 100
+
+        [[related.indices]]
+            name = "series"
+            weight = 50
+
+        [[related.indices]]
+            name = "authors"
+            weight = 20
+
+        [[related.indices]]
+            name = "date"
+            weight = 10
+
+        [[related.indices]]
+            applyFilter = false
+            name = 'fragmentrefs'
+            type = 'fragments'
+            weight = 10

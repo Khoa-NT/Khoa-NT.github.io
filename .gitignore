@@ -1,0 +1,20 @@
+### Node.js dependencies directory
+node_modules
+### Hugo build lock file
+.hugo_build.lock
+
+### OS generated files
+### macOS system file for folder display options
+.DS_Store
+### Alternative macOS system file
+.DS_Store?
+### macOS resource fork files (commented out)
+# ._*
+### macOS Spotlight search index
+.Spotlight-V100
+### macOS trash folder
+.Trashes
+
+### Hugo
+### Hugo generated static site output directory
+public
