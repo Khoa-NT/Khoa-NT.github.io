@@ -6,7 +6,7 @@
 
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://Khoa-NT.github.io"
+baseURL = "https://khoa-nt.github.io"
 
 defaultContentLanguage = "en"
 

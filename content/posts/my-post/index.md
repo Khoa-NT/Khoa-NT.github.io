@@ -33,7 +33,7 @@ tags: []                                               # tags for this blog post
 # editAppendPath: true                                   # whether to append the page path to editURL
 ---
 
-Start writing your blog post in Markdown here.
+This is my first post.
 
 <!-- Use images placed in the `images/` folder next to this file, e.g.: -->
 <!-- ![Caption](images/photo1.jpg) -->
