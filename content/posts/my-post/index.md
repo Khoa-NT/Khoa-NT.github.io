@@ -4,7 +4,7 @@ title: 'My first Post'    # auto-generate title from folder name
 date: '2025-10-04T18:37:33+09:00'                                             # sets the creation date
 
 ### Draft / publication control
-draft: true                                          # mark new posts as drafts by default
+draft: false                                          # mark new posts as drafts by default
 
 ### SEO / metadata
 description: ""                                       # short description or excerpt for meta tags
