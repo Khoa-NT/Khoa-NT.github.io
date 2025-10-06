@@ -4,7 +4,7 @@ title: 'My first Post'    # auto-generate title from folder name
 date: '2025-10-04T18:37:33+09:00'                                             # sets the creation date
 
 ### Draft / publication control
-draft: false                                          # mark new posts as drafts by default
+draft: true                                          # mark new posts as drafts by default
 
 ### SEO / metadata
 description: ""                                       # short description or excerpt for meta tags
@@ -21,11 +21,12 @@ showReadingTime: true                                  # show estimated reading 
 
 ### Taxonomy fields
 tags: []                                               # tags for this blog post
-# series: []                                             # series name(s) if you group posts
-# series_order: 1                                        # ordering in series, if used
+series: ["test"]                                             # series name(s) if you group posts
+series_order: 1                                        # ordering in series, if used
 
 ### Comments / sharing
-# showComments: false                                    # whether to include comments section
+### Available values are: “bluesky”, “email”, “facebook”, “line”, “linkedin”, “mastodon”, “pinterest”, “reddit”, “telegram”, “twitter”, and “whatsapp”.
+# showComments: true                                    # whether to include comments section
 # sharingLinks: ["twitter", "linkedin", "facebook"]      # which social links to show
 
 ### Edit link (if your config enables showEdit)
@@ -33,7 +34,22 @@ tags: []                                               # tags for this blog post
 # editAppendPath: true                                   # whether to append the page path to editURL
 ---
 
+# Heading 1
 This is my first post to test the GitHub Pages.
+
+## Heading 2
+Heading 1 doesn't show in the TOC.
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+# Next Heading 1
+## Next Heading 2
 
 <!-- Use images placed in the `images/` folder next to this file, e.g.: -->
 <!-- ![Caption](images/photo1.jpg) -->

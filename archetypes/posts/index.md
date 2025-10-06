@@ -25,8 +25,9 @@ tags: []                                               # tags for this blog post
 # series_order: 1                                        # ordering in series, if used
 
 ### Comments / sharing
+### Available values are: “bluesky”, “email”, “facebook”, “line”, “linkedin”, “mastodon”, “pinterest”, “reddit”, “telegram”, “twitter”, and “whatsapp”.
 # showComments: false                                    # whether to include comments section
-# sharingLinks: ["twitter", "linkedin", "facebook"]      # which social links to show
+# sharingLinks: ["twitter", "linkedin", "facebook"]      # which social links to show. 
 
 ### Edit link (if your config enables showEdit)
 # editURL: ""                                            # base URL for “edit this page”
